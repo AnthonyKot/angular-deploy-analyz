@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .status-icon-success {
+    @apply bg-green-500/15 text-green-600 rounded-full flex items-center justify-center h-5 w-5 flex-shrink-0;
+  }
+  
+  .status-icon-warning {
+    @apply bg-yellow-500/15 text-yellow-600 rounded-full flex items-center justify-center h-5 w-5 flex-shrink-0;
+  }
+  
+  .status-icon-danger {
+    @apply bg-red-500/15 text-red-600 rounded-full flex items-center justify-center h-5 w-5 flex-shrink-0;
+  }
+}
+
+/* Monaco editor styles */
+.monaco-editor .bg-yellow-100 {
+  background-color: rgba(254, 243, 199, 0.6) !important;
+  border-left: 4px solid #f59e0b !important;
+}
+
+.monaco-editor .highlighted-line {
+  background-color: rgba(254, 243, 199, 0.6) !important;
+  font-weight: 500 !important;
+}
+
+.monaco-editor .highlighted-gutter {
+  background-color: #f59e0b !important;
+  width: 5px !important;
+}
+
+.monaco-editor .highlighted-margin {
+  background-color: rgba(245, 158, 11, 0.2) !important;
+}
+
+.monaco-editor .bg-yellow-300 {
+  background-color: #f59e0b !important;
+}
+
+/* Editor container styling */
+.ngx-monaco-editor {
+  height: 100% !important;
+  width: 100% !important;
+  display: block !important;
+  overflow: hidden !important;
+}
+
+ngx-monaco-editor {
+  height: 100% !important;
+  min-height: 20rem !important;
+  display: block !important;
+  overflow: hidden !important;
+}
+
+/* Additional editor styling to prevent horizontal scrolling */
+.monaco-editor .monaco-scrollable-element {
+  overflow-x: hidden !important;
+}
+
+.monaco-editor .overflow-guard {
+  width: 100% !important;
+}

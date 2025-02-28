@@ -1,0 +1,45 @@
+/node_modules
+/dist
+/tmp
+/out
+/build
+
+.angular
+.vscode
+.idea
+.DS_Store
+*.log
+*.suo
+*.user
+*.userprefs
+*.pid
+*.orig
+*.rej
+*.ipr
+*.iws
+*.iml
+
+# Ignore artifacts from build systems
+.nyc_output
+coverage
+
+# Dependencies directories
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+
+# Optional: Ignore environment files if they contain sensitive data
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor or tool specific files (customize as needed)
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+Thumbs.db
